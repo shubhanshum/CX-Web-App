@@ -1,0 +1,12 @@
+{
+    "credentials":{
+    "email" : "shubhanshum@test.com",
+    "password":"Password@12"
+    },
+
+    "payeeDetails":{
+        "account_holder":"Test Account4",
+        "account_number":55668811965033116615
+    }
+    
+}

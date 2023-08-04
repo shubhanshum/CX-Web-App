@@ -1,0 +1,132 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Check make local transafers for positive scenarios (Local payout)",
+    "line": 1,
+    "id": "check-make-local-transafers-for-positive-scenarios-(local-payout)",
+    "tags": [],
+    "uri": "make_transfer_sc_outline.feature",
+    "elements": [
+      {
+        "id": "check-make-local-transafers-for-positive-scenarios-(local-payout);validate-make-transfers-to-existing-payee-with-different-amounts",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Validate make transfers to existing payee with different amounts",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login into banking application",
+            "result": {
+              "status": "passed",
+              "duration": 12362000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click on the \"Payments\" tab from left side navigation",
+            "result": {
+              "status": "passed",
+              "duration": 1055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I select an existing payee \"Salary\"",
+            "result": {
+              "status": "passed",
+              "duration": 1392000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on \"Make a payment\" button on \"Payee details\" page",
+            "result": {
+              "status": "passed",
+              "duration": 472000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I enter \"10\" on \"Amount\" field on \"Make a payment\" page",
+            "result": {
+              "status": "passed",
+              "duration": 578000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I enter \"my ref\" in \"Reference\" field on \"Make a payment\" page",
+            "result": {
+              "status": "passed",
+              "duration": 264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on \"Continue\" button on \"Make a payment\" page",
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click on \"Confirm payment\" button on \"Confirm details\" page",
+            "result": {
+              "status": "passed",
+              "duration": 981000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I complete \"2FA OTP\" authentication",
+            "result": {
+              "status": "passed",
+              "duration": 7569000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see \"Payment sent\" message",
+            "result": {
+              "status": "passed",
+              "duration": 3815000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click on \"Done\" button",
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

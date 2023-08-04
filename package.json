@@ -1,0 +1,33 @@
+{
+  "name": "cx-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports:": "if exist cypress\\reports rmdir /q /s cypress\\reports && if exist cypress\\screenshots rmdir /q /s- cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
+    "pretest": "npm run clean:reports",
+    "ui-test": "cypress run --browser chrome",
+    "tests": "npm run ui-test || npm run posttest",
+    "posttest": "node cucumber-html-report.js"
+  },
+  "author": "shubhanshu mishra",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  }
+}

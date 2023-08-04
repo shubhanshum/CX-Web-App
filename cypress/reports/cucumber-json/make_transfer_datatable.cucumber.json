@@ -1,0 +1,147 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Check make a local transafer for negative scenarios (Local payout)",
+    "line": 1,
+    "id": "check-make-a-local-transafer-for-negative-scenarios-(local-payout)",
+    "tags": [],
+    "uri": "make_transfer_datatable.feature",
+    "elements": [
+      {
+        "id": "check-make-a-local-transafer-for-negative-scenarios-(local-payout);validate-error-message-while-making-a-transfer-to-existing-payee-with-0-amount",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate error message while making a transfer to existing payee with 0 amount",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I login into banking application",
+            "result": {
+              "status": "passed",
+              "duration": 10971000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the \"Payments\" tab from left side navigation",
+            "result": {
+              "status": "passed",
+              "duration": 1139000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "PayeeName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Rent"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I select an existing payee",
+            "result": {
+              "status": "passed",
+              "duration": 1889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on \"Make a payment\" button on \"Payee details\" page",
+            "result": {
+              "status": "passed",
+              "duration": 475000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Amount"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "0"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I enter \"Amount\" in \"Amount\" field on \"Make a payment\" page",
+            "result": {
+              "status": "passed",
+              "duration": 617000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Reference"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ref A"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I enter \"Reference\" in \"Reference\" field on \"Make a payment\" page",
+            "result": {
+              "status": "passed",
+              "duration": 264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click on \"Continue\" button on \"Make a payment\" page",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see \"Amount must be greater than 0\" error message",
+            "result": {
+              "status": "passed",
+              "duration": 454000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
