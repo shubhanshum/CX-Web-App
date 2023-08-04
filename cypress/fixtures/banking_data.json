@@ -7,6 +7,17 @@
     "payeeDetails":{
         "account_holder":"Test Account4",
         "account_number":55668811965033116615
+    },
+
+    "userProfileData":{
+        "name":"shubhanshu mishra",
+        "address": "Sopra Banking Software, Noida,",
+        "post":"201301",
+        "country":"India",
+        "phone":"+918899098780",
+        "email":"shubhanshum@test.com",
+        "dob":"02/11/1987"
+
     }
     
 }
